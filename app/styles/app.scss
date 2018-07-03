@@ -1,0 +1,70 @@
+@import 'bootstrap';
+@import 'spinner';
+
+
+html {
+  overflow-y: scroll;
+}
+
+.library-item {
+  min-height: 150px;
+}
+
+.label-fade {
+  margin: 10px;
+  opacity: 0;
+  @include transition(all 0.5s);
+  &.label-show {
+    opacity: 1;
+  }
+}
+
+.btn-narrow {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.page-footer {
+  padding: 20px;
+  margin-top: 50px;
+  color: darken($brand-primary, 50);
+  background-color: lighten($brand-primary, 45);
+  border-top: 1px solid lighten($brand-primary, 30);
+}
+
+.vtop {
+  vertical-align: top!important;
+}
+
+.not-bold {
+  font-weight: normal!important;
+}
+
+th.wider {
+  min-width: 200px;
+}
+
+.extra-padding-bottom {
+  padding-bottom: 20px;
+}
+
+
+.container {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.navbar {
+  border-radius: 0px;
+}
+.navbar-inverse {
+  background-color: #1a2c5b;
+  border-color: #1a2c5b;
+}
+.content-area{
+  margin:40px
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #3e4e88;
+}
